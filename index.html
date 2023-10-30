@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dots and Squares</title>
+    <script src="./app.js"></script>
+
+    <style>
+      div#result-bar {
+        background-color: #eaeaea;
+        height: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 30px;
+        font-family: sans-serif;
+        padding: 6px;
+        border-radius: 5px;
+      }
+      .wrapper-board {
+        white-space: nowrap;
+        overflow: scroll;
+        position: relative;
+      }
+      div#turn-label {
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="result-bar">
+      <div id="player-one-score"></div>
+      <div>
+        <div style="display: flex">
+          <div id="turn-label" style="margin-right: 5px"></div>
+          <input value="3" id="rows-input" placeholder="rows" />
+          <input value="4" id="columns-input" placeholder="columns" />
+          <button id="restart-btn">Restart</button>
+        </div>
+      </div>
+      <div id="player-two-score"></div>
+    </div>
+    <div id="board"></div>
+  </body>
+</html>
